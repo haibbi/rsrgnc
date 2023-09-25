@@ -1,6 +1,6 @@
 import { ReactComponent as Logo } from './gold-coin.svg'
 
-const formatter = new Intl.NumberFormat('en-US', {
+const formatter = new Intl.NumberFormat(window.navigator.language, {
   style: 'currency',
   currency: 'USD',
 });
