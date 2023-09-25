@@ -12,6 +12,7 @@ type CurrencyProps = {
 const Currency = (props: CurrencyProps) => {
   const amount = formatter.format(props.amount);
   return <div className="
+  text-white
   p-1 bg-gray-800
   flex items-center
   border-2 border-gray-900 rounded-md divide-x divide-gray-900
