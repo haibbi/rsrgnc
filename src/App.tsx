@@ -9,11 +9,7 @@ function App() {
     {
       title: 'Gizli Sözleşme',
       description: 'Yüksek profilli bir işadamının iş yerini ziyaret ederek gizli bilgileri çal.'
-    },
-    {
-      title: 'Casusluk Görevleri',
-      description: ' Rakip çetelerin sırlarını öğrenmek için casusluk yapmalısın. Bilgi topla ve düşmanlarını zayıflatmak için kritik bilgileri kullan.'
-    },
+    }
   ];
 
   return (

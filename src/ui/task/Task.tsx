@@ -1,6 +1,6 @@
-import Button from "../core/Button.tsx";
 import { useCounterContext } from "../../player/player.ts";
 import React from "react";
+import AnimatedButton from "../core/AnimatedButton.tsx";
 
 interface TaskProps {
   title: string;
@@ -19,7 +19,7 @@ const Task: React.FC<TaskProps> = ({title, description}) => {
       <p
         className="mb-3 font-normal text-gray-700 dark:text-gray-400"
       >{description}</p>
-      <Button onClick={increment}>Görevi Yap</Button>
+      <AnimatedButton onClick={increment}>Görevi Yap</AnimatedButton>
     </div>
 
   );

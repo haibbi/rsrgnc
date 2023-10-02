@@ -20,3 +20,6 @@ const Button: React.FC<ButtonProps> = ({type, onClick, children}) => {
 }
 
 export default Button;
+export type {
+  ButtonProps
+}
