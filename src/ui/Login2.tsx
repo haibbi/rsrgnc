@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff, User, Lock, Crown } from 'lucide-react';
 
-const LoginPage2 = () =>  {
+const LoginPage = () =>  {
   const [showPassword, setShowPassword] = useState(false);
   const [isRegistering, setIsRegistering] = useState(false);
   const [isForgotPassword, setIsForgotPassword] = useState(false);
@@ -298,4 +298,4 @@ const LoginPage2 = () =>  {
   );
 }
 
-export default LoginPage2;
+export default LoginPage;

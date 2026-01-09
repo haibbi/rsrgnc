@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from './gold-coin.svg?react'
+import Logo from '../assets/gold-coin.svg?react'
 
 const formatter = new Intl.NumberFormat('en-US', {
   style: 'currency',
