@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+
+@keyframes fog1 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+@keyframes fog2 {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-200px); }
+}
+
+.animate-fog1 {
+  animation: fog1 60s linear infinite;
+}
+.animate-fog2 {
+  animation: fog2 90s linear infinite;
+}
+
+/* Neon efekt */
+.neon {
+  text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
+.neon-btn {
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+}
