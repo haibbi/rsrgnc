@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage2 from "./ui/Login2";
+import MafiaCraftingPage from "./ui/crafting";
 
 function App() {
   const [amount, setAmount] = useState(0);
@@ -11,7 +13,12 @@ function App() {
   };
 
   return (
-    <LoginPage2 />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LoginPage2 />} />
+        <Route path="/crafting" element={<MafiaCraftingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

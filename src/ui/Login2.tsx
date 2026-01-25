@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Eye, EyeOff, User, Lock, Crown } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
-const LoginPage2 = () =>  {
+const LoginPage2 = () => {
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const [isRegistering, setIsRegistering] = useState(false);
   const [isForgotPassword, setIsForgotPassword] = useState(false);
@@ -21,6 +23,7 @@ const LoginPage2 = () =>  {
   const handleLogin = () => {
     console.log('Login attempt:', formData);
     // Login logic here
+    navigate('/crafting');
   };
 
   const handleSocialLogin = (provider: any) => {
